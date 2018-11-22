@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto' , Arial , Helvetica, sans-serif;
+    font-size: 10 px;
+}
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+nav{
+    margin: 0 auto;
+    max-width: 110rem;
+   
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+
+}
+main{
+    max-width: 110rem;
+    min-height: calc(100vh - 14.5rem);
+    margin: 0 auto;
+    padding: 0 1.5rem 0 1.5rem;
+    text-align: center;
+}
+footer{
+    margin-top: 4rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+li a{
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 1.5rem;
+}
+li a:hover{
+    background-color: #29487d;
+}
+h1{
+    font-size: 4rem;
+    padding: 2rem;
+}
+h2{
+    padding: 1rem;
+}
+h3{
+    padding-bottom: 1rem;
+}
+.background-white{
+    background: white;
+    color: #333;
+}
+.background-dark{
+    background: #333;
+    color: white;
+}
+.background-blue{
+    background: #4267b2;
+}
+.background-yellow{
+    background: #c7900a;
+}
+.weather{
+    height: 15rem;
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 0.5rem solid #4267b2;
+    border-radius: 2rem;
+}
+.weather-conditions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-photo{
+    width: 25rem;
+    border-radius: 50%;
+    border: 0.5rem solid transparent;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem #4267b2;
+}
+.toggle-background{
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+.toggle-background:focus{
+    box-shadow: 0rem 0rem 0rem 0.2rem #BC243C;
+}
+.toggle-background:hover{
+    background-color: #29487d;
+    cursor: not-allowed;
+}
+#description > div{
+    margin-top: 2rem;
+}
+.underline{
+    width: 15rem;
+    height: 1rem;
+    margin: 2rem auto 0 auto;
+    background-color: #4267b2;
+    border-radius: 5rem;
+}
+
+.current{
+    background-color: #283a58;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.about{
+    color: orange;
+    top: 10rem;
+    justify-content: left;
+}
+.message-list > li{
+    display: block;
+}
+.message-list > li a{
+    background-color: #BC243C;
+  
+}
+.message-photo{
+    width: 25rem;
+}
+.button{
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+}
+.introduce{
+    color: rgb(143, 31, 137);
+    
+}
+#project-layout > div{
+    background-color: #c7900a;
+    color: green;
+}
+#project-layout{
+    list-style-type: upper-roman;
+}
+
+
+#actual-projects{
+    float: left;
+}
+#future-projects{
+    float: right;
+}
+#actual-projects > h2{
+    text-decoration: underline #4267b2;
+    color: whitesmoke;
+}
+#future-projects > h2{
+    text-decoration: underline #4267b2;
+    color: whitesmoke;
+}
+@media screen and (min-width: 768px){
+    li a{
+        padding: 2rem 5rem;
+    }
+    #description{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #description > div{
+        max-width: 30%;
+    }
+    .paragraph{
+        min-height: 20rem;
+    }
+
+}
+@media screen and (min-width: 1025px){
+    .weather{
+        min-height: 15.5rem;
+        width: 20rem;
+        position: absolute;
+        right: 0;
+        
+    }
+    .paragraph{
+        min-height: 15rem;
+    }
+}
